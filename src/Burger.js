@@ -19,7 +19,7 @@ const Div =styled.div`
   div{
     width:2rem;
     height:0.25rem;
-    background:${props => props.open ?"#fff" :"#1565df"};
+    background:${props => props.open ?"#fff" :"lightgray"};
     border-radius:10px;
     transform-origin:1px;
     transition:all 0.3s linear;

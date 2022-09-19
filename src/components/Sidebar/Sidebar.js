@@ -6,7 +6,7 @@ const Ul =styled.ul`
    @media (max-width:800px){
     margin:0;
     flex-direction:column;
-    background:red;
+    background:gray;
     transition:all 0.5s;
     position:fixed;
     transform:${propse => propse.open ? "translateX(0)" : "translateX(-100%)"};

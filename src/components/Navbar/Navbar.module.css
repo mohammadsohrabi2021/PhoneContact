@@ -48,6 +48,15 @@
     align-items: center;
     height: 60px;
 }
+@media only screen and (max-width:769px) {
+
+  .container{
+      width:91vw;
+      margin-left: 60px;
+  }
+ 
+  
+}
 @media only screen and (max-width:768px) {
     .iconNavbar,.menu{
         display: none;
@@ -65,14 +74,5 @@
     .list{
         width: 100%;
     }
-    
-  }
-  @media only screen and (min-width:769px) {
-  
-    .container{
-        width:91vw;
-        margin-left: 60px;
-    }
-   
     
   }

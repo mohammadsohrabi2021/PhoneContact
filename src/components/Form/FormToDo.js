@@ -1,9 +1,10 @@
-import React from 'react';
+import react from 'react';
 import Styles from "./Form.module.css";
 const FormToDo = () => {
+   
     return (
         <div>
-            <form >
+            <form onSubmit={handleSubmite}>
                 <fieldset className={Styles.formLogin}>
                     <legend>login:</legend>
                     <div className={Styles.formItem}>
@@ -34,7 +35,9 @@ const FormToDo = () => {
                         <lable>Email:</lable>
                         <input name='email' />
                     </div>
-                    <button className={Styles.formsubmit}>submit</button>
+                    <button className={Styles.formsubmit}> 
+                        submit
+                    </button>
                 </fieldset>
             </form>
         </div>

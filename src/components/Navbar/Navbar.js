@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Styles from "./Navbar.module.css";
 import User from "../../images/user.jfif";
-import FormToDo from "../Form/FormToDo"
+import Form from '../Form/Form';
 class Navbar extends Component {
     render() {
         return (
@@ -25,7 +25,7 @@ class Navbar extends Component {
 
                 <div className={Styles.navbarBot}>
                     <div>
-                       <FormToDo />
+                       <Form />
                     </div>
                     <div className={Styles.menu}>
                         <i class="fa-solid fa-ellipsis-vertical"></i>

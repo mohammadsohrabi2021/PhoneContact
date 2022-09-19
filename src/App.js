@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import "./App.css"
-import Sidebar from './components/Sidebar/Sidebar';
 import Main from './components/Main/Main';
+import Burger from './Burger';
 class App extends Component {
   render() {
     return (
       <div className='Flexcontainer'>
-        <Sidebar />
+        <Burger />
         <Main />
       </div>
     );

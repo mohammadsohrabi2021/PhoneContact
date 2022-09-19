@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import Styles from "./Navbar.module.css";
 import User from "../../images/user.jfif";
+import styled from 'styled-components';
+const Div =styled.div`
+ 
+  @media (max-width:800px){
+    width:125%;
+    margin-left: 60px;
+
+  }
+  `
 class Navbar extends Component {
     render() {
         return (
-            <div className={Styles.container}>
+            <Div className={Styles.container}>
                 <div className={Styles.navbarTop}>
                     <form className={Styles.formSearch}>
                         <span  className={Styles.location} >
@@ -32,7 +41,7 @@ class Navbar extends Component {
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-            </div>
+            </Div>
         );
     }
 }

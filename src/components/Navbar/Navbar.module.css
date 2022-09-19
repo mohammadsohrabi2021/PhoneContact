@@ -1,6 +1,6 @@
 .container{
     box-shadow: 10px 10px 10px rgb(244, 231, 231);
-    
+
 }
 .formSearch{
     position: relative;
@@ -39,7 +39,7 @@
     border-radius: 50%;
 }
 .iconNavbar{
-    display: flex;
+    display: none;
     gap: 20px;
 }
 .navbarBot{
@@ -49,3 +49,8 @@
     align-items: center;
     height: 60px;
 }
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: blue;
+    }
+  }

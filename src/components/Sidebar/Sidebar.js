@@ -1,9 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Styles from "./Sidebar.module.css"
-class Sidebar extends Component {
-    render() {
+import styled from 'styled-components';
+const Ul =styled.ul`
+  
+   @media (max-width:800px){
+    margin:0;
+    flex-direction:column;
+    background:red;
+    transition:all 0.5s;
+    position:fixed;
+    transform:${propse => propse.open ? "translateX(0)" : "translateX(-100%)"};
+    top:0;
+    left:0;
+    height:100vh;
+    width:70%;
+    padding-top:3.5rem;
+    li{
+        color:#fff;
+    }
+   }
+`
+const Sidebar =({open} ) =>{
         return (
-            <div className={Styles.container}>
+            <Ul open={open} className={Styles.container}>
                <h2>
                    <i class="fa-regular fa-user "></i>
                    <span>Contacts</span>
@@ -62,9 +81,9 @@ class Sidebar extends Component {
                   <span>trash</span> 
                 </li>
             </ul>
-            </div>
+            </Ul>
         );
     }
-}
+
 
 export default Sidebar;

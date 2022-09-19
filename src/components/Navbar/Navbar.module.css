@@ -1,6 +1,5 @@
 .container{
     box-shadow: 10px 10px 10px rgb(244, 231, 231);
-
 }
 .formSearch{
     position: relative;
@@ -39,7 +38,7 @@
     border-radius: 50%;
 }
 .iconNavbar{
-    display: none;
+    display: flex;
     gap: 20px;
 }
 .navbarBot{
@@ -49,8 +48,31 @@
     align-items: center;
     height: 60px;
 }
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: blue;
+@media only screen and (max-width:768px) {
+    .iconNavbar,.menu{
+        display: none;
     }
+    .container{
+        margin-left: 60px;
+        width:91vw;
+    }
+    .image{
+        display: none;
+    }
+    .input{
+        width: 85vw;
+    }
+    .list{
+        width: 100%;
+    }
+    
+  }
+  @media only screen and (min-width:769px) {
+  
+    .container{
+        width:91vw;
+        margin-left: 60px;
+    }
+   
+    
   }

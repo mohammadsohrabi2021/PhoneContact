@@ -1,16 +1,20 @@
-.container{
+.container {
     box-shadow: 10px 10px 10px rgb(244, 231, 231);
+    height: 400px;
 }
-.formSearch{
+
+.formSearch {
     position: relative;
-    width:80%;
+    width: 80%;
 }
-.navbarTop{
+
+.navbarTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.input{
+
+.input {
     width: 100%;
     height: 40px;
     padding: 0 40px;
@@ -20,59 +24,82 @@
     outline: 0;
     margin-top: 10px;
 }
-.location{
+
+.location {
     position: absolute;
-    top:22px;
+    top: 22px;
     left: 10px;
 }
-.list{
+
+.navbarBot {
+    width: 97%;
     display: flex;
-    list-style-type: none;
-    width: 70%;
     justify-content: space-between;
 }
-.image{
+
+.image {
     width: 40px;
     height: 40px;
     margin: 10px 10px 0 0;
     border-radius: 50%;
 }
-.iconNavbar{
-    display: flex;
-    gap: 20px;
-}
-.navbarBot{
-    width: 97%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-}
-@media only screen and (max-width:769px) {
 
-  .container{
-      width:91vw;
-      margin-left: 60px;
-  }
- 
-  
+.iconNavbar {
+    display: none;
 }
-@media only screen and (max-width:768px) {
-    .iconNavbar,.menu{
-        display: none;
+@media only screen and (min-width:1100px) {
+    .iconNavbar {
+        display: flex;
+        gap: 20px !important;
     }
-    .container{
+    .menu{
+        margin-right:5px !important;
+    }
+}
+@media only screen and (min-width:801px) {
+    .iconNavbar {
+        display: flex;
+        gap: 5px;
+    }
+    .menu{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .container {
+        width: 91vw;
         margin-left: 60px;
-        width:91vw;
     }
-    .image{
+    .menu{
         display: none;
     }
     .input{
+        width: 83vw;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .iconNavbar,
+    .menu {
+        display: none;
+    }
+
+    .container {
+        margin-left: 60px;
+        width: 91vw;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .input {
         width: 85vw;
     }
-    .list{
+
+    .list {
         width: 100%;
     }
-    
-  }
+
+}

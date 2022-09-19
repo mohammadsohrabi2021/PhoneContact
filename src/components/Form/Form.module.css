@@ -1,0 +1,62 @@
+.formsubmit{
+    width: 45%;
+    height: 30px;
+    margin: 26px 5px!important;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    outline: 0;
+}
+@media only screen and (max-width:800px) {
+    .formLogin{
+        width: 50vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .formItem{
+        width: 45%;
+        margin: 10px 5px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .formLogin{
+        width: 85vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .formItem{
+        width: 45%;
+        margin: 10px 5px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:770px) {
+    .formLogin{
+        width: 83vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .formItem{
+        width: 45%;
+        margin: 10px 5px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:800px) {
+    .formLogin{
+        width: 64vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+

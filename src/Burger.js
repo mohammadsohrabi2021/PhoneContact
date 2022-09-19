@@ -6,7 +6,7 @@ const Div =styled.div`
   width:2rem;
   height:2rem;
   position:fixed;
-  top:20px;
+  top:15px;
   left:20px;
   z-index:20;
   display:none;

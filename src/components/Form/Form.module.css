@@ -1,8 +1,9 @@
 .formsubmit{
     width: 45%;
     height: 30px;
-    margin: 26px 5px!important;
+    margin: 30px 5px!important;
     cursor: pointer;
+    border: 0.5px solid red;
 }
 input{
     padding: 5px;

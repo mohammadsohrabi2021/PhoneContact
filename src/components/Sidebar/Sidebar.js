@@ -29,7 +29,7 @@ const Sidebar =({open} ) =>{
                </h2>
                <h3> 
                    <i class="fa-solid fa-plus"></i>
-                   add user
+                   <span >add user</span>
                </h3>
             <ul className={Styles.list}>
                 <li className={Styles.user}>

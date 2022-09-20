@@ -4,10 +4,10 @@
     z-index: 10;
 }
 .container h2{
-    margin:10px 0 10px 70px;
     display: flex;
     align-items: center;
     gap: 15px;
+    font-size: 18px;
 }
 h2 i{
     width: 35px;
@@ -21,21 +21,26 @@ h2 i{
 .container h3{
     width: 70%;
     background-color: #fff;
-    box-shadow: 10px 10px 10px rgb(244, 231, 231);
-    padding: 20px 20px 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 5px 40px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     border-radius: 50px;
+}
+h3 i{
+   color: red;
+   padding: 5px;
 }
 .list{
     list-style-type: none;
     line-height: 2.5rem;
-    margin: 30px 0;
+    margin: 20px 0;
+    padding: 0;
 }
 .user{
     background-color: pink;
     border-radius: 20px;
-    width: 90%;
+    width: 80%;
 }
 li{
     cursor: pointer;
@@ -46,5 +51,29 @@ li i{
 }
 .book ,.faceBook,.address{
     border-bottom: 1px solid lightgray;
-    width: 90%;
+    width: 80%;
+} 
+@media only screen and (max-width: 767px) {
+    .container h2{
+        margin:10px 0 10px 50px;
+    }
+    .container h3{
+      padding: 0;
+      width: 80%;
+      
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container h2{
+        margin:10px 0 10px 70px ;
+    }
+    .container h3{
+        padding:  5px 5px 5px 20px;
+        width: 80%;
+        
+      }
+}
+@media only screen and (min-width: 801px) {
+  
 }

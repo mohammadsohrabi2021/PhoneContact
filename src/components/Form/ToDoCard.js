@@ -3,13 +3,8 @@ import Styles from "./ToDoCard.module.css";
 import RandomAvatar from '../Avatar/RandomAvatar';
 const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
     const handeleDelete = user => {
-        if (user) {
-            alert('ایا از حذف این کاربر مطمن هستی؟')
+            alert("Are you sure to delete this user?")
             setTodos(todos.filter(todo => todo.user !== user))
-        }
-        else {
-            alert('no')
-        }
     }
     const handelCheck = user => {
         setTodos(todos.map(todo => todo.user === user ? { ...todo, state: !todo.state } : todo))

@@ -36,7 +36,7 @@ const FormToDo = ({ form,  FormStatus,handleSubmit ,handleChange }) => {
                         <input onChange={handleChange} name={'email'} value={form.email}  />
                     </div>
                     <button type={'submit'} className='btn btn-primary px-5 ' style={{width:'46%' ,height:"40px",marginTop:'30px' }}> 
-                         {FormStatus === 'add' ? 'submit' : 'update'}
+                         {FormStatus === 'add' ?   'update':'submit'}
                     </button>
                 </fieldset>
             </form>

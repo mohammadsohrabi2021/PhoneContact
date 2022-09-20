@@ -13,51 +13,38 @@ const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
     }
     return (
         <div class="table-responsive-sm " >
-            
-                <table class="table my-3 ">
-                <thead class="table-dark">
-                    <tr>
-                        <th>user</th>
-                        <th>Name</th>
-                        <th>LastName</th>
-                        <th>Phone</th>
-                        <th>Age</th>
-                        <th>Country</th>
-                        <th>City</th>
-                        <th>Email</th>
-                        <th>action</th>
-                    </tr>
-                </thead>
-                <tbody style={{width:'100%'}}>
-                   <tr>
-                    <td>
-                        {todo.user}
-                    </td>
-                    <td>
-                        {todo.name}
-                    </td>
-                    <td>
-                        {todo.lastName}
-                    </td>
-                    <td>
-                        {todo.phone}
-                    </td>
-                    <td>
-                        {todo.age}
-                    </td>
-                    <td>
-                        {todo.Country}
-                    </td>
-                    <td>
-                        {todo.City}
-                    </td>
-                    <td>
-                        {todo.email}
-                    </td>
-                   </tr>
-                </tbody>
-            </table>
-            
+            <div style={{ border: '1px solid #000', margin: '20px', padding:'10px' }}>
+                    <div>
+                        user:{todo.user}
+                    </div>
+                    <div>
+                        name : {todo.name}
+                    </div>
+                    <div>
+                    <div>
+                        lastName:{todo.lastName}
+                    </div>
+                      phone:{todo.phone}
+                    </div>
+                    <div>
+                      age:{todo.age}
+                    </div>
+                    <div>
+                      Country:{todo.Country}
+                    </div>
+                    <div>
+                      City:{todo.City}
+                    </div>
+                    <div>
+                      Email:{todo.email}
+                    </div>
+                    <button onClick={() => handeleDelete(todo.id)}style={{  margin: '20px', padding:'5px',cursor:'pointer' }}>
+                        delete
+                    </button>
+                    <button onClick={() => handleUpdate(todo)}style={{  margin: '20px', padding:'5px',cursor:'pointer'}}>
+                        upDate
+                    </button>
+                </div>
         </div>
     );
 };

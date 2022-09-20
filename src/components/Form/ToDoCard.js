@@ -3,7 +3,13 @@ import Styles from "./ToDoCard.module.css";
 import RandomAvatar from '../Avatar/RandomAvatar';
 const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
     const handeleDelete = user => {
-        setTodos(todos.filter(todo => todo.user !== user))
+        if (user) {
+            alert('ایا از حذف این کاربر مطمن هستی؟')
+            setTodos(todos.filter(todo => todo.user !== user))
+        }
+        else {
+            alert('no')
+        }
     }
     const handelCheck = user => {
         setTodos(todos.map(todo => todo.user === user ? { ...todo, state: !todo.state } : todo))
@@ -13,10 +19,10 @@ const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
         setForm(todo)
     }
     return (
-        <div class="card my-4  className={Styles.container}">
+        <div class="card my-4" className={Styles.container}>
             <div class="row g-0">
-                <div class="col-md-4">
-                <RandomAvatar name={todos}/>
+                <div  className={Styles.Avatar} >
+                    <RandomAvatar name={todo}  />
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

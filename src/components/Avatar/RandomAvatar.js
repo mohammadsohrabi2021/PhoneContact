@@ -1,9 +1,10 @@
 import React from 'react';
 import Avatar from 'react-avatar';
-const RandomAvatar = ({name}) => {
+const RandomAvatar = ({ name }) => {
     return (
         <>
-            <Avatar className={'avatarStyle'} name={name} />
+            <Avatar githubHandle="sitebase" round="50%" size={'90%'} name={name}  />
+           
         </>
     );
 };

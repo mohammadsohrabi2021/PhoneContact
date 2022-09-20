@@ -42,7 +42,7 @@ const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
                     <h5> Email:<br />{todo.email}</h5>
                 </div>
                 <div className={Styles.button}>
-                    <button class=" btn btn-danger my-3" onClick={() => handeleDelete(todo.id)}>
+                    <button class=" btn btn-danger my-3" onClick={() => handeleDelete(todo.user)}>
                         delete
                     </button>
                     <button class="btn btn-primary m-3" onClick={() => handleUpdate(todo)}>

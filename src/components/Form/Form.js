@@ -3,11 +3,11 @@ import FormToDo from './FormToDo';
 import ToDoCard from './ToDoCard';
 const Form = () => {
   const [todos, setTodos] = useState([
-    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" },
-    { user: Math.floor(Math.random() * 1000), name: "ali", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" },
-    { user: Math.floor(Math.random() * 1000), name: "reza", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" },
-    { user: Math.floor(Math.random() * 1000), name: "milad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" },
-    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" },
+    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
+    { user: Math.floor(Math.random() * 1000), name: "ali", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
+    { user: Math.floor(Math.random() * 1000), name: "reza", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com",state:'false' },
+    { user: Math.floor(Math.random() * 1000), name: "milad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
+    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
   ])
   const [form, setForm] = useState({ name: '', lastName: '', phone: '', age: '', Country: '', City: '', email: '' })
   const [FormStatus, setFormStatus] = useState('add')
@@ -17,7 +17,7 @@ const Form = () => {
   const handleSubmit = event => {
     event.preventDefault()
     if (FormStatus === 'add') {
-      setTodos([...todos, { id: Math.floor(Math.random() * 1000), name: form.name, lastName: form.lastName, phone: form.phone, age: form.age, Country: form.Country, City: form.City, email: form.email }])
+      setTodos([...todos, {user: Math.floor(Math.random() * 1000), name: form.name, lastName: form.lastName, phone: form.phone, age: form.age, Country: form.Country, City: form.City, email: form.email }])
     }
     else {
       setTodos(todos.map(todo => todo.user === form.user ? form : todo))

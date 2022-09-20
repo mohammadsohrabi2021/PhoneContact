@@ -1,4 +1,4 @@
-import react from 'react';
+import React from "react";
 import Styles from "./Form.module.css";
 const FormToDo = ({ form,  FormStatus,handleSubmit ,handleChange }) => {
    

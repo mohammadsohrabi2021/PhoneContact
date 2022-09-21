@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState, useRef } from "react";
 import Styles from "./ToDoCard.module.css";
-import RandomAvatar from '../Avatar/RandomAvatar';
+
 import Dialog from './Dialog';
 const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
-
     const [dialog, setDialog] = useState({
         message: "",
         isLoading: false,
@@ -49,7 +48,7 @@ const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
         <div class="card my-4" className={Styles.container}>
             <div class="row g-0">
                 <div className={Styles.Avatar} >
-                    <RandomAvatar name={todo} />
+                  <img src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`}/>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

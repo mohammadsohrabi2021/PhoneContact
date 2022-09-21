@@ -8,31 +8,31 @@ const FormToDo = ({ form,  FormStatus,handleSubmit ,handleChange }) => {
                 <fieldset className={Styles.formLogin}>
                     <legend>login:</legend>
                     <div className={Styles.formItem}>
-                        <lable>Name:</lable>
+                        <lable htmlFor={'name'}>Name:</lable>
                         <input onChange={handleChange} name={'name'} value={form.name} />
                     </div>
                     <div  className={Styles.formItem}>
-                        <lable>lastName:</lable>
+                        <lable htmlFor={'lastName'}>lastName:</lable>
                         <input onChange={handleChange} name={'lastName'} value={form.lastName}  />
                     </div>
                     <div  className={Styles.formItem}>
-                        <lable>Phone:</lable>
-                        <input onChange={handleChange} name={'phone'} value={form.phone}  />
+                        <lable htmlFor={'phone'}>Phone:</lable>
+                        <input onChange={handleChange} name={'phone'}  value={form.phone}  />
                     </div>
                     <div className={Styles.formItem}>
-                        <lable>age:</lable>
+                        <lable  htmlFor={'age'}>age:</lable>
                         <input onChange={handleChange} name={'age'} value={form.age} />
                     </div>
                     <div className={Styles.formItem}>
-                        <lable>Country:</lable>
+                        <lable  htmlFor={'Country'}>Country:</lable>
                         <input onChange={handleChange} name={'Country'} value={form.Country}  />
                     </div>
                     <div className={Styles.formItem}>
-                        <lable>City:</lable>
+                        <lable  htmlFor={'City'}>City:</lable>
                         <input  onChange={handleChange} name={'City'} value={form.City} />
                     </div>
                     <div className={Styles.formItem}>
-                        <lable>Email:</lable>
+                        <lable  htmlFor={'email'}>Email:</lable>
                         <input onChange={handleChange} name={'email'} value={form.email}  />
                     </div>
                     <button type={'submit'} className='btn btn-primary px-5 ' style={{width:'46%' ,height:"40px",marginTop:'30px' }}> 

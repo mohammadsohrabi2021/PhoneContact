@@ -3,11 +3,11 @@ import FormToDo from './FormLogin';
 import ToDoCard from './ToDoCard';
 const Form = () => {
   const [todos, setTodos] = useState([
-    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
-    { user: Math.floor(Math.random() * 1000), name: "ali", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
-    { user: Math.floor(Math.random() * 1000), name: "reza", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com",state:'false' },
-    { user: Math.floor(Math.random() * 1000), name: "milad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
-    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'false'},
+    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'unfavoriteData'},
+    { user: Math.floor(Math.random() * 1000), name: "ali", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'unfavoriteData'},
+    { user: Math.floor(Math.random() * 1000), name: "reza", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com",state:'favoriteData' },
+    { user: Math.floor(Math.random() * 1000), name: "milad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'favoriteData'},
+    { user: Math.floor(Math.random() * 1000), name: "mohammad", lastName: "sohrabi", phone: "09186333667", age: 21, Country: "iran", City: "hamedan", email: "mohammadsohrabi141@gmail.com" ,state:'unfavoriteData'},
   ])
   const [form, setForm] = useState({ name: '', lastName: '', phone: '', age: '', Country: '', City: '', email: '' })
   const [FormStatus, setFormStatus] = useState('add')

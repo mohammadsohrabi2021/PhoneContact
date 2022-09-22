@@ -62,7 +62,7 @@ const ToDoCard = ({  todos, setTodos, setFormStatus, setForm }) => {
     return (
         <div class="card my-4" className={Styles.containerCard}>
            <Search handleSearch={handleSearch} search={search}/>
-           <Filter filterData={filterData} setFilter={setFilter} filter={filter}/>
+           <Filter filterData={filterData} setFilter={setFilter}/>
             {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase())&& (filter === 'allData' ? true : todo.state === filter)) .map(todo => (
             <Card todo={todo} Styles={Styles} handelCheck={handelCheck} handeleDelete={handeleDelete} handleUpdate={handleUpdate}/>
         ))} 

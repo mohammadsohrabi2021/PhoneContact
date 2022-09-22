@@ -3,7 +3,7 @@ import Styles from "./Form.module.css";
 const FormToDo = ({ form,  FormStatus,handleSubmit ,handleChange }) => {
    
     return (
-        <div>
+        <div className={Styles.container}>
             <form onSubmit={handleSubmit}>
                 <fieldset className={Styles.formLogin}>
                     <legend>login:</legend>
@@ -35,7 +35,7 @@ const FormToDo = ({ form,  FormStatus,handleSubmit ,handleChange }) => {
                         <lable  htmlFor={'email'}>Email:</lable>
                         <input onChange={handleChange} name={'email'} value={form.email}  />
                     </div>
-                    <button type={'submit'} className='btn btn-primary px-5 ' style={{width:'46%' ,height:"40px",marginTop:'30px' }}> 
+                    <button type={'submit'} className='btn btn-primary px-4 ' style={{width:'46%' ,height:"38px",marginTop:'34px' }}> 
                          {FormStatus === 'add' ?   'update':'submit'}
                     </button>
                 </fieldset>

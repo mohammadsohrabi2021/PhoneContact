@@ -14,10 +14,10 @@
     align-items: center;
 }
 
-.input {
+.marquee {
     width: 100%;
     height: 40px;
-    padding: 0 40px;
+    padding: 7px 40px;
     border-radius: 5px;
     background-color: #f9e8e8;
     border: 0;
@@ -25,11 +25,6 @@
     margin-top: 10px;
 }
 
-.location {
-    position: absolute;
-    top: 22px;
-    left: 10px;
-}
 
 .navbarBot {
     width: 97%;
@@ -73,7 +68,7 @@
     .menu{
         display: none;
     }
-    .input{
+    .marquee{
         width: 83vw;
     }
 }
@@ -94,7 +89,7 @@
         display: none;
     }
 
-    .input {
+    .marquee {
         width: 85vw;
     }
 

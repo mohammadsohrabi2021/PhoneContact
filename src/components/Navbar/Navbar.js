@@ -8,7 +8,7 @@ class Navbar extends Component {
             <div className={Styles.container}>
                 <div className={Styles.navbarTop}>
                     <div className={Styles.formSearch}>
-                        <marquee className={Styles.input}>متن متحرک</marquee>
+                        <marquee   className={Styles.marquee}>I'm Mohammad Sohrabi, React developer and programmer</marquee>
                     </div>
                    
                     <div className={Styles.iconNavbar}>

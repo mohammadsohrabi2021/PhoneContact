@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <div>
       <FormToDo handleChange={handleChange} handleSubmit={handleSubmit} form={form} formStatus={FormStatus} setForm={setForm} setTodos={setTodos} todos={todos} setFormStatus={setFormStatus} />
-      {todos.map(todo => <ToDoCard todo={todo} todos={todos} setForm={setForm} setFormStatus={setFormStatus} setTodos={setTodos} />)}
+      <ToDoCard  todos={todos} setForm={setForm} setFormStatus={setFormStatus} setTodos={setTodos} />
     </div>
   );
 };

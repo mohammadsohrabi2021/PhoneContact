@@ -11,7 +11,7 @@
     width: 89%;
     margin:10px  0.6%;
     border-radius: 8px;
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 .itemCard{
     width: 50%;

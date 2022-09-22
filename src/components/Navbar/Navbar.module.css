@@ -35,29 +35,34 @@
 .image {
     width: 40px;
     height: 40px;
-    margin: 10px 10px 0 0;
+    margin: 0px 10px 0 0;
     border-radius: 50%;
 }
 
 .iconNavbar {
     display: none;
 }
+.menu{cursor: pointer;}
 @media only screen and (min-width:1100px) {
     .iconNavbar {
         display: flex;
+        align-items: center;
         gap: 20px !important;
+        cursor: pointer;
     }
     .menu{
-        margin-right:5px !important;
+        margin-right:0px !important;
     }
 }
 @media only screen and (min-width:801px) {
     .iconNavbar {
         display: flex;
+        align-items: center;
         gap: 5px;
+        cursor: pointer;
     }
     .menu{
-        margin: 10px;
+        margin:10px ;
     }
 }
 @media only screen and (max-width:800px) {

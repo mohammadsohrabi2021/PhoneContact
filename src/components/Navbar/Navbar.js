@@ -14,7 +14,10 @@ class Navbar extends Component {
                     <div className={Styles.iconNavbar}>
                         <i class="fa-solid fa-circle-half-stroke"></i>
                         <i class="fa-solid fa-gear"></i>
+                        
+                        <a href={'https://github.com/mohammadsohrabi2021'} target={'_blank'}>
                         <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                     <div>
                         <img className={Styles.image} src={User} alt="user" />

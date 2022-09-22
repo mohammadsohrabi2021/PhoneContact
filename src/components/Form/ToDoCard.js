@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState, useRef } from "react";
 import Styles from "./ToDoCard.module.css";
-
 import Dialog from './Dialog';
+import Search from '../Search/Search';
+import Card from './Card';
 const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
     const [dialog, setDialog] = useState({
         message: "",
@@ -44,56 +45,17 @@ const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
         setFormStatus('upDate')
         setForm(todo)
     }
+    // -------------
+    const[search , setSearch]=useState('')
+     const handleSearch = e =>{
+        setSearch(e.target.value)
+     }
     return (
         <div class="card my-4" className={Styles.container}>
-            <div class="row g-0">
-                <div className={Styles.Avatar} >
-                  <img src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`}/>
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <div class="card">
-                            <div className={Styles.Card}>
-                                <div class='LongHairFroBand' className={Styles.itemCard}>
-                                    <h5>user:{todo.user}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5>name : {todo.name}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5>lastName:{todo.lastName}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5> phone:{todo.phone}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard} onClick={() => handelCheck(todo.user)} style={{ cursor: 'pointer' }}>
-                                    <h5>state:{todo.state ? ' Inactive ' : ' active '}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5>age:{todo.age}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5> Country:{todo.Country}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5>City:{todo.City}</h5>
-                                </div>
-                                <div class="card-body" className={Styles.itemCard}>
-                                    <h5> Email:<br />{todo.email}</h5>
-                                </div>
-                                <div className={Styles.button}>
-                                    <button class=" btn btn-danger my-3" onClick={() => handeleDelete(todo.user)}>
-                                        delete
-                                    </button>
-                                    <button class="btn btn-primary m-3" onClick={() => handleUpdate(todo)}>
-                                        upDate
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           <Search handleSearch={handleSearch} search={search}/>
+            {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase())) .map(todo => (
+            <Card todo={todo} Styles={Styles} handelCheck={handelCheck} handeleDelete={handeleDelete} handleUpdate={handleUpdate}/>
+        ))} 
             {dialog.isLoading && (
                 <Dialog
                     //Update

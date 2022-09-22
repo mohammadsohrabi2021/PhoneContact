@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Styles from "./Navbar.module.css";
 import User from "../../images/user.jfif";
-import Form from '../Form/Form';
+import Form from '../Form/FormData';
 class Navbar extends Component {
     render() {
         return (

@@ -1,10 +1,17 @@
-.container{
+
+.containerCard{
     display: flex;
     flex-direction: column;
     width: 100% !important;
     margin-top: 30px;
     border-radius: 8px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.container{
+    width: 89%;
+    margin:10px  0.6%;
+    border-radius: 8px;
+    border: 1px solid lightgray;
 }
 .itemCard{
     width: 50%;
@@ -13,7 +20,6 @@
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-   
 }
 h5{
     font-size: 14px;
@@ -23,6 +29,7 @@ h5{
    margin-top: 30px;
    width: 33%;
    border-radius: 50%;
+   
 }
 
 

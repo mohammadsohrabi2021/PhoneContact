@@ -1,6 +1,8 @@
-
+.title{
+    margin-left: 5px;
+}
 .input{
-    width: 90%;
-    margin: 10px 0;
-
+    width: 89%;
+    margin:5px ;
+   
 }

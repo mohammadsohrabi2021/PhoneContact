@@ -51,7 +51,7 @@ const ToDoCard = ({  todos, setTodos, setFormStatus, setForm }) => {
         setSearch(e.target.value)
      }
     return (
-        <div class="card my-4" className={Styles.container}>
+        <div class="card my-4" className={Styles.containerCard}>
            <Search handleSearch={handleSearch} search={search}/>
             {todos.filter(todo => todo.name.toUpperCase().includes(search.toUpperCase())) .map(todo => (
             <Card todo={todo} Styles={Styles} handelCheck={handelCheck} handeleDelete={handeleDelete} handleUpdate={handleUpdate}/>

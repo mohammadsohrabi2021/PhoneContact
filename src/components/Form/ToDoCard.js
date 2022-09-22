@@ -4,7 +4,7 @@ import Styles from "./ToDoCard.module.css";
 import Dialog from './Dialog';
 import Search from "../Search/Search"
 import Card from './Card';
-const ToDoCard = ({ todo, todos, setTodos, setFormStatus, setForm }) => {
+const ToDoCard = ({  todos, setTodos, setFormStatus, setForm }) => {
     const [dialog, setDialog] = useState({
         message: "",
         isLoading: false,

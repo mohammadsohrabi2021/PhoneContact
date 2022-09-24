@@ -8,6 +8,7 @@ function Dialog({ message, onDialog, nameProduct }) {
           left: "0",
           right: "0",
           bottom: "0",
+          color:'red',
           backgroundColor: "rgba(0,0,0,0.5)"
         }}
         onClick={() => onDialog(false)}

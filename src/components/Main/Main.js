@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Styles from "./Main.module.css";
 import Navbar from '../Navbar/Navbar';
 import { Toggle } from '../Toggle';

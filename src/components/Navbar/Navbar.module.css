@@ -20,6 +20,7 @@
     padding: 7px 40px;
     border-radius: 5px;
     background-color: #f9e8e8;
+    color: black;
     border: 0;
     outline: 0;
     margin-top: 10px;
@@ -64,6 +65,7 @@
     .menu{
         margin:10px ;
     }
+  
 }
 @media only screen and (max-width:800px) {
     .container {
@@ -74,7 +76,7 @@
         display: none;
     }
     .marquee{
-        width: 83vw;
+        width: 75vw;
     }
 }
 

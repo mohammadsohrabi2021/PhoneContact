@@ -5,11 +5,41 @@ let Sun, Moon;
 
 Sun = Moon = styled.svg`
   position: absolute;
-  top: 1.2rem;
-  right: 9.5rem;
+
   transition: all .5s linear;
   cursor: pointer;
-  
+  @media (max-width:1440px){
+    top:1.2rem;
+  right: 10rem;
+  } 
+  @media (max-width:1320px){
+    top:1.2rem;
+  right: 9rem;
+  } 
+  @media (max-width:1200px){
+    top:1.2rem;
+  right: 8.5rem;
+  }
+  @media (max-width:1100px){
+    top:1.2rem;
+  right: 7.2rem;
+  }
+  @media (max-width:1024px){
+    top:1.2rem;
+  right: 7rem;
+  } 
+  @media (max-width:768px){
+    top: 1.1rem;
+    right: 1rem;
+  } 
+  @media (max-width:425px){
+    top: 1.1rem;
+    right:-1.8rem;
+  } 
+  @media (max-width:320px){
+    top: 1.2rem;
+    right: -4rem;
+  } 
 `;
 
 export const Toggle = ({ theme, toggleTheme }) => {

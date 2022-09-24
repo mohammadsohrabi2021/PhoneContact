@@ -12,7 +12,7 @@ class Navbar extends Component {
                     </div>
                    
                     <div className={Styles.iconNavbar}>
-                        <i class="fa-solid fa-circle-half-stroke"></i>
+                        {/* <i class="fa-solid fa-circle-half-stroke"></i> */}
                         <i class="fa-solid fa-gear"></i>
                         
                         <a href={'https://github.com/mohammadsohrabi2021'} target={'_blank'}>

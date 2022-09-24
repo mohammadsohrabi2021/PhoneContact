@@ -7,7 +7,7 @@ const Filter = ({filterData,setFilter }) => {
         setFilter(title)
     }
     return (
-        <div>
+        <div className={Styles.containerBox}>
             <div>
                 filter:
             </div>

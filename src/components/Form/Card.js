@@ -4,7 +4,7 @@ const Card = ({ handelCheck, todo, Styles, handleUpdate, handeleDelete }) => {
         <div className={Styles.container}>
             <div class="row g-0 border rounded-2 m-3 ">
                 <div className={Styles.Avatar} >
-                    <img src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} />
+                    <img src={`https://avatars.dicebear.com/api/avataaars/:${todo.user}.svg`} alt="avatar"/>
                 </div>
                 <div class="col-md-8 py-5">
                     <div class="card-body ">

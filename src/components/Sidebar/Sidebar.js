@@ -12,7 +12,7 @@ const Ul =styled.ul`
     transform:${propse => propse.open ? "translateX(0)" : "translateX(-100%)"};
     top:0;
     left:0;
-    height:100vh;
+    height:900px;
     width:70%;
     padding-top:3.5rem;
     li{
